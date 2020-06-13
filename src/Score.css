@@ -1,0 +1,39 @@
+.score {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  margin: 20px;
+  background: #f0a43b;
+  padding: 8px;
+  width: 480px;
+  border: 3px solid black;
+  color: white;
+  font-size: 20px;
+}
+
+.score-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.score-data {
+  padding: 2px 14px;
+}
+
+.separator {
+  height: 2px;
+  background: black;
+  margin: 10px;
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .score {
+    width: calc(100% - 30px);
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,15 @@
+export const BOX_NUMBER_ONE = "BOX_NUMBER_ONE";
+export const BOX_NUMBER_TWO = "BOX_NUMBER_TWO";
+export const BOX_NUMBER_THREE = "BOX_NUMBER_THREE";
+export const MONEY = "MONEY";
+export const EMPTY = "EMPTY";
+export const SET_PICKED_BOX = "SET_PICKED_BOX";
+export const RESET_BOXES = "RESET_BOXES";
+export const SET_IS_REVELEAD_BY_HOST = "SET_IS_REVELEAD_BY_HOST";
+export const SET_BOX_WITH_MONEY = "SET_BOX_WITH_MONEY";
+export const DISPLAY_SECOND_BOX = "DISPLAY_SECOND_BOX";
+export const DISPLAY_RESULT = "DISPLAY_RESULT";
+export const PICK_FIRST_BOX = "PICK_FIRST_BOX";
+export const PICK_THIRD_BOX = "PICK_THIRD_BOX";
+export const SET_STEP = "SET_STEP";
+export const SWITCH_BOX = "SWITCH_BOX";

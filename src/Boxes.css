@@ -1,0 +1,13 @@
+.boxes {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  margin: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .boxes {
+    flex-direction: column;
+  }
+}

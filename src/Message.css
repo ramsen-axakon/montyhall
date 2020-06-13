@@ -1,0 +1,28 @@
+.message {
+  background: white;
+  padding: 10px;
+  border-radius: 2px;
+  position: relative;
+  min-height: 80px;
+  width: 600px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.message-bubble {
+  position: absolute;
+  right: 14px;
+  bottom: -18px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 20px solid white;
+}
+
+@media only screen and (max-width: 600px) {
+  .message {
+    width: calc(100% - 30px);
+  }
+}
