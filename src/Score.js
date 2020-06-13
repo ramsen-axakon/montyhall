@@ -6,7 +6,7 @@ export default function Score({ data }) {
   const { switched, kept } = data;
   return (
     <div className="score">
-      <div>Keept box</div>
+      <div>Kept box</div>
       <div className="score-row">
         <div className="score-data">
           <b>Count:</b>
