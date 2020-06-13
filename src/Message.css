@@ -24,5 +24,6 @@
 @media only screen and (max-width: 600px) {
   .message {
     width: calc(100% - 30px);
+    margin-top: 10px;
   }
 }

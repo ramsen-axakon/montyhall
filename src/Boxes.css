@@ -9,5 +9,6 @@
 @media only screen and (max-width: 600px) {
   .boxes {
     flex-direction: column;
+    margin: 6px;
   }
 }
