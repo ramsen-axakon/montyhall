@@ -10,7 +10,7 @@ export default function Boxes() {
   const allBoxes = useSelector(({ app }) => getBoxes(app));
 
   const pickedBoxWithMoney = allBoxes.filter(
-    (box) => box.money === true && box.pickedBox === true
+    (box) => box.money && box.pickedBox
   );
 
   function createMessage() {
