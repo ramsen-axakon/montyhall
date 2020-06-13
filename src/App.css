@@ -1,39 +1,38 @@
-.App {
+.app {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-float infinite 3s ease-in-out;
-  }
-}
-
-.App-header {
+  background: url("./assets/img/monty_1.jpg");
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: 16px;
+  font-family: "Holtwood One SC", serif;
+  color: #f0a43b;
 }
 
-.App-link {
-  color: rgb(112, 76, 182);
+@media only screen and (max-width: 600px) {
+  .app {
+    background-position: center;
+  }
 }
 
-@keyframes App-logo-float {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(10px)
-  }
-  100% {
-    transform: translateY(0px)
-  }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-size: 1em;
+}
+
+button {
+  font-size: 1em;
+  font-family: "Holtwood One SC", serif;
+  padding: 0;
+  border: none;
+  background: none;
 }
