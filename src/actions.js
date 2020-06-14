@@ -4,7 +4,6 @@ import {
   REVELE_EMPTY_BOX,
   INIT_BOX_WITH_MONEY,
   SET_STEP,
-  SWITCH_BOX,
   SET_SWITCHED_STATISTICS,
   SET_KEPT_STATISTICS,
 } from "./constants";
@@ -38,13 +37,6 @@ export function setStep(step) {
   return {
     type: SET_STEP,
     step,
-  };
-}
-
-export function switchBox(pickedBox) {
-  return {
-    type: SWITCH_BOX,
-    pickedBox,
   };
 }
 
