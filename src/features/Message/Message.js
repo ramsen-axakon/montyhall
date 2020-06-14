@@ -9,7 +9,7 @@ import {
 
 import "./Message.css";
 
-export default function Boxes() {
+export default function Boxes({ simulating }) {
   const currentStep = useSelector(({ app }) => getStep(app));
   const allBoxes = useSelector(({ app }) => getBoxes(app));
 
@@ -39,7 +39,9 @@ export default function Boxes() {
 
   return (
     <div className="message">
-      {createMessage()}
+      {simulating
+        ? "Exiting! Running simulations please wait..."
+        : createMessage()}
       <span className="message-bubble"></span>
     </div>
   );

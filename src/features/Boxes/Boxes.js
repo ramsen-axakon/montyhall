@@ -18,6 +18,7 @@ import {
 import { getRandomInt } from "../../utils/getRandomHelper";
 import Box from "./Box";
 import Button from "../../components/Button/Button";
+import Message from "../Message/Message";
 
 import "./Boxes.css";
 
@@ -98,6 +99,7 @@ export default function Boxes() {
   }
   return (
     <>
+      <Message simulating={loadingSimulation} />
       <div className="boxes">
         {allBoxes.map((box) => {
           return (
@@ -126,10 +128,8 @@ export default function Boxes() {
 
       <Button
         className={"button"}
-        onClick={() => simulateGame(500)}
-        text={
-          loadingSimulation ? "Simulating...please wait!" : "Run simulation"
-        }
+        onClick={() => simulateGame(100)}
+        text={loadingSimulation ? <div class="loader" /> : "Run simulation"}
         disabled={loadingSimulation}
       />
     </>
