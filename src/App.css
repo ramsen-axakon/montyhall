@@ -54,7 +54,5 @@ button {
     width: calc(100% - 20px);
     height: auto;
     padding: 0;
-    background: none;
-    box-shadow: none;
   }
 }
