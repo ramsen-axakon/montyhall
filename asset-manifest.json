@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/montyhall/static/css/main.82a3d8fe.chunk.css",
-    "main.js": "/montyhall/static/js/main.9f50c4d1.chunk.js",
-    "main.js.map": "/montyhall/static/js/main.9f50c4d1.chunk.js.map",
+    "main.css": "/montyhall/static/css/main.91cece4b.chunk.css",
+    "main.js": "/montyhall/static/js/main.8ac7c066.chunk.js",
+    "main.js.map": "/montyhall/static/js/main.8ac7c066.chunk.js.map",
     "runtime-main.js": "/montyhall/static/js/runtime-main.718674c3.js",
     "runtime-main.js.map": "/montyhall/static/js/runtime-main.718674c3.js.map",
-    "static/js/2.d82d25db.chunk.js": "/montyhall/static/js/2.d82d25db.chunk.js",
-    "static/js/2.d82d25db.chunk.js.map": "/montyhall/static/js/2.d82d25db.chunk.js.map",
+    "static/js/2.475b9e3f.chunk.js": "/montyhall/static/js/2.475b9e3f.chunk.js",
+    "static/js/2.475b9e3f.chunk.js.map": "/montyhall/static/js/2.475b9e3f.chunk.js.map",
     "index.html": "/montyhall/index.html",
-    "precache-manifest.9031227fb2d538d00d742ded6ebf0f65.js": "/montyhall/precache-manifest.9031227fb2d538d00d742ded6ebf0f65.js",
+    "precache-manifest.1e2d354755c54e53004aebf1da70e0d0.js": "/montyhall/precache-manifest.1e2d354755c54e53004aebf1da70e0d0.js",
     "service-worker.js": "/montyhall/service-worker.js",
-    "static/css/main.82a3d8fe.chunk.css.map": "/montyhall/static/css/main.82a3d8fe.chunk.css.map",
-    "static/js/2.d82d25db.chunk.js.LICENSE.txt": "/montyhall/static/js/2.d82d25db.chunk.js.LICENSE.txt",
+    "static/css/main.91cece4b.chunk.css.map": "/montyhall/static/css/main.91cece4b.chunk.css.map",
+    "static/js/2.475b9e3f.chunk.js.LICENSE.txt": "/montyhall/static/js/2.475b9e3f.chunk.js.LICENSE.txt",
     "static/media/Box.css": "/montyhall/static/media/money.5a5f2ff5.png",
     "static/media/App.css": "/montyhall/static/media/monty_1.61b92ce6.jpg",
     "static/media/monty_2.jpg": "/montyhall/static/media/monty_2.ed8b4911.jpg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.718674c3.js",
-    "static/js/2.d82d25db.chunk.js",
-    "static/css/main.82a3d8fe.chunk.css",
-    "static/js/main.9f50c4d1.chunk.js"
+    "static/js/2.475b9e3f.chunk.js",
+    "static/css/main.91cece4b.chunk.css",
+    "static/js/main.8ac7c066.chunk.js"
   ]
 }
