@@ -78,7 +78,7 @@ export default function Boxes() {
     pickBox(dispatchSwitchBox, times);
     setTimeout(() => {
       setLoadingSimulation(false);
-    }, 100 * times);
+    }, times);
   }
 
   function nextStepHandler(pickedBox) {
@@ -126,7 +126,7 @@ export default function Boxes() {
 
       <Button
         className={"button"}
-        onClick={() => simulateGame(100)}
+        onClick={() => simulateGame(500)}
         text={
           loadingSimulation ? "Simulating...please wait!" : "Run simulation"
         }
