@@ -1,5 +1,5 @@
 import React from "react";
-import { DISPLAY_RESULT } from "./constants";
+import { DISPLAY_RESULT } from "../../constants";
 
 import "./Box.css";
 
@@ -10,10 +10,10 @@ export default function Box({ callBack, data, step }) {
 
   return (
     <button
-      onClick={() => callBack(data, step)}
+      onClick={() => callBack(data)}
       className="box"
       disabled={isReveleadByHost || pickedBox || step === DISPLAY_RESULT}
-      style={isReveleadByHost ? { opacity: "0.5" } : { opacity: "1" }}
+      style={isReveleadByHost ? { opacity: "0.2" } : { opacity: "1" }}
     >
       {displayValueOfBox ? (
         valueOfBox

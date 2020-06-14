@@ -1,16 +1,13 @@
 import React from "react";
-import { useSelector } from "react-redux";
-import { getScore } from "./selectors";
 import montyImages from "./utils/montyImages";
 import { getRandomMonty } from "./utils/getRandomHelper";
-import Message from "./Message";
-import Boxes from "./Boxes";
-import Score from "./Score";
+import Message from "./features/Message/Message";
+import Boxes from "./features/Boxes/Boxes";
+import Statistics from "./features/Statistics/Statistics";
 
 import "./App.css";
 
 function App() {
-  const score = useSelector(({ app }) => getScore(app));
   return (
     <div
       className="app"
@@ -18,9 +15,11 @@ function App() {
         backgroundImage: `url(${montyImages[getRandomMonty]})`,
       }}
     >
-      <Message />
-      <Boxes />
-      <Score data={score} />
+      <div className="container">
+        <Message />
+        <Boxes />
+        <Statistics />
+      </div>
     </div>
   );
 }

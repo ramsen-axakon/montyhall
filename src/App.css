@@ -16,7 +16,7 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .app {
+  .App {
     background-position: center;
   }
 }
@@ -35,4 +35,28 @@ button {
   padding: 0;
   border: none;
   background: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 600px;
+  height: 56vh;
+  flex-wrap: wrap;
+  background: #222222e6;
+  padding: 30px;
+  border-radius: 2px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: auto;
+    width: calc(100% - 20px);
+    height: 100vh;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+  }
 }

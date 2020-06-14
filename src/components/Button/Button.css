@@ -1,5 +1,5 @@
 .button {
-  background-color: #f0a43b;
+  background-color: green;
   border-radius: 2px;
   color: white;
   padding: 15px 32px;
@@ -7,20 +7,17 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 10px;
   border: 2px solid black;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  width: 100%;
+}
+
+.button:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
 .button:disabled,
 .button[disabled] {
   background-color: #d8d5d557;
   color: #6666663d;
-}
-
-@media only screen and (max-width: 600px) {
-  .button {
-    width: 80%;
-    padding: 6px 21px;
-    margin: 4px;
-  }
 }

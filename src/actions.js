@@ -1,40 +1,61 @@
 import {
   SET_PICKED_BOX,
-  RESET_BOXES,
-  SET_IS_REVELEAD_BY_HOST,
-  SET_BOX_WITH_MONEY,
+  RESET_GAME,
+  REVELE_EMPTY_BOX,
+  INIT_BOX_WITH_MONEY,
+  SET_STEP,
+  SWITCH_BOX,
+  SET_SWITCHED_STATISTICS,
+  SET_KEPT_STATISTICS,
 } from "./constants";
 
-export function setPickedBox(data) {
+export function setPickedBox(pickedBox) {
   return {
     type: SET_PICKED_BOX,
-    data,
+    pickedBox,
   };
 }
 
-export function resetBoxes(boxes) {
+export function resetGame() {
   return {
-    type: RESET_BOXES,
-    boxes,
+    type: RESET_GAME,
   };
 }
 
-export function setIsReveleadByHost(data) {
+export function reveleEmptyBox() {
   return {
-    type: SET_IS_REVELEAD_BY_HOST,
-    data,
+    type: REVELE_EMPTY_BOX,
   };
 }
 
-export function setBoxWithMoney() {
+export function initBoxWithMoney() {
   return {
-    type: SET_BOX_WITH_MONEY,
+    type: INIT_BOX_WITH_MONEY,
   };
 }
 
-export function setStep(step, data) {
+export function setStep(step) {
   return {
-    type: step,
-    data,
+    type: SET_STEP,
+    step,
+  };
+}
+
+export function switchBox(pickedBox) {
+  return {
+    type: SWITCH_BOX,
+    pickedBox,
+  };
+}
+
+export function setSwitchedStatistics() {
+  return {
+    type: SET_SWITCHED_STATISTICS,
+  };
+}
+
+export function setKeptStatistics() {
+  return {
+    type: SET_KEPT_STATISTICS,
   };
 }
