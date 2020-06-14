@@ -1,4 +1,4 @@
-import produce, { current } from "immer";
+import produce from "immer";
 import * as constants from "./constants";
 import { getRandomInt, getRandomBox } from "./utils/getRandomHelper";
 import { initialBoxes, initialStatistics } from "./utils/initialHelper";
@@ -70,15 +70,14 @@ const reducer = produce((draft, action) => {
       return draft;
 
     case constants.REVELE_EMPTY_BOX:
-      const currentBoxes = current(draft.boxes);
-      const losingBoxes = currentBoxes.filter((box) => !box.money);
-      const openNumber = getRandomBox(losingBoxes.length);
-      let openBox = losingBoxes[openNumber];
-      if (openBox.pickedBox) {
-        openBox = losingBoxes[+!openNumber];
-      }
-      draft.boxes[openBox.id].isReveleadByHost = true;
+      const boxesWithoutMoney = draft.boxes.filter((box) => !box.money);
+      const reveleadNumber = getRandomBox(boxesWithoutMoney.length);
 
+      let reveleadByHost = boxesWithoutMoney[reveleadNumber];
+      if (reveleadByHost.pickedBox) {
+        reveleadByHost = boxesWithoutMoney[+!reveleadNumber];
+      }
+      draft.boxes[reveleadByHost.id].isReveleadByHost = true;
       return draft;
 
     case constants.INIT_BOX_WITH_MONEY:
