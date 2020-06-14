@@ -74,7 +74,7 @@ export default function Boxes() {
     }, 3000);
   };
 
-  function nextStepHandler(pickedBox, currentStep) {
+  function nextStepHandler(pickedBox) {
     switch (currentStep) {
       case PICK_FIRST_BOX:
         return dispatchPickFirstBox(pickedBox);
