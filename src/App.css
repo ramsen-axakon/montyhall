@@ -42,7 +42,6 @@ button {
   flex-direction: column;
   justify-content: space-evenly;
   width: 600px;
-  height: 56vh;
   background: #222222e6;
   padding: 30px;
   border-radius: 2px;
@@ -53,7 +52,7 @@ button {
   .container {
     height: auto;
     width: calc(100% - 20px);
-    height: 100vh;
+    height: auto;
     padding: 0;
     background: none;
     box-shadow: none;
