@@ -12,7 +12,11 @@ export default function Box({ callBack, data, step }) {
       className="background"
       style={
         money
-          ? { backgroundColor: "#92bb92", backgroundImage: `url(${dollar})` }
+          ? {
+              backgroundColor: "#92bb92",
+              backgroundImage: `url(${dollar})`,
+              backgroundRepeat: "repeat",
+            }
           : { backgroundColor: "rgb(255, 115, 115)" }
       }
     ></div>
