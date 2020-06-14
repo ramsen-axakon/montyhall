@@ -43,7 +43,6 @@ button {
   justify-content: space-evenly;
   width: 600px;
   height: 56vh;
-  flex-wrap: wrap;
   background: #222222e6;
   padding: 30px;
   border-radius: 2px;
