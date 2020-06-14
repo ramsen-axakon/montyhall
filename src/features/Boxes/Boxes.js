@@ -128,7 +128,7 @@ export default function Boxes() {
 
       <Button
         className={"button"}
-        onClick={() => simulateGame(100)}
+        onClick={() => simulateGame(1000)}
         text={loadingSimulation ? <div class="loader" /> : "Run simulation"}
         disabled={loadingSimulation}
       />
