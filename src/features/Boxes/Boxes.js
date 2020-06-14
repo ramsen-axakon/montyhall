@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   setPickedBox,
@@ -9,14 +9,13 @@ import {
   setSwitchedStatistics,
   setKeptStatistics,
 } from "../../actions";
-
 import { getBoxes, getStep } from "../../selectors";
 import {
   PICK_FIRST_BOX,
   KEEP_OR_SWITCH_BOX,
   DISPLAY_RESULT,
 } from "../../constants";
-
+import { getRandomInt } from "../../utils/getRandomHelper";
 import Box from "./Box";
 import Button from "../../components/Button/Button";
 
@@ -25,6 +24,8 @@ import "./Boxes.css";
 export default function Boxes() {
   const allBoxes = useSelector(({ app }) => getBoxes(app));
   const currentStep = useSelector(({ app }) => getStep(app));
+
+  const [displaySimulationDone, setDisplaySimulationDone] = useState(false);
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -50,12 +51,30 @@ export default function Boxes() {
 
   const dispatchSwitchBox = (pickedBox) => {
     dispatch(setPickedBox(pickedBox));
-
     dispatch(setSwitchedStatistics());
     dispatch(setStep(DISPLAY_RESULT));
   };
 
-  function nextStepHandler(pickedBox) {
+  function pickBox(descision, times) {
+    for (let index = 0; index < times; index++) {
+      const randomBox = allBoxes[getRandomInt(0, 3)];
+
+      dispatchPickFirstBox(randomBox);
+      descision(randomBox);
+      dispatchResetGame();
+    }
+  }
+
+  const simulateGame = (times) => {
+    setDisplaySimulationDone(true);
+    pickBox(dispatchSwitchBox, times);
+    pickBox(dispatchKeepBox, times);
+    setTimeout(() => {
+      setDisplaySimulationDone(false);
+    }, 3000);
+  };
+
+  function nextStepHandler(pickedBox, currentStep) {
     switch (currentStep) {
       case PICK_FIRST_BOX:
         return dispatchPickFirstBox(pickedBox);
@@ -96,6 +115,13 @@ export default function Boxes() {
         onClick={dispatchResetGame}
         text={"Restart game"}
         disabled={currentStep !== DISPLAY_RESULT}
+      />
+
+      <Button
+        className={"button"}
+        onClick={() => simulateGame(100)}
+        text={displaySimulationDone ? "Done!" : "Simulate"}
+        disabled={displaySimulationDone}
       />
     </>
   );
