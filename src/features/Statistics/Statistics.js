@@ -9,7 +9,6 @@ export default function Statistics() {
   const switchedStatistics = useSelector(({ app }) =>
     getSwitchedStatistics(app)
   );
-
   return (
     <div className="statistics">
       <div>Keep</div>

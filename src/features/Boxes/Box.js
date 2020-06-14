@@ -5,8 +5,8 @@ import dollar from "../../assets/img/dollar.png";
 import "./Box.css";
 
 export default function Box({ callBack, data, step }) {
-  const { id, isReveleadByHost, money, pickedBox } = data;
-  const displayValueOfBox = isReveleadByHost || step === DISPLAY_RESULT;
+  const { id, isRevealedByHost, money, pickedBox } = data;
+  const displayValueOfBox = isRevealedByHost || step === DISPLAY_RESULT;
   const valueOfBox = (
     <div
       className="background"
@@ -28,8 +28,8 @@ export default function Box({ callBack, data, step }) {
     <button
       onClick={() => callBack(data)}
       className="box"
-      disabled={isReveleadByHost || pickedBox || step === DISPLAY_RESULT}
-      style={isReveleadByHost ? { opacity: "0.2" } : { opacity: "1" }}
+      disabled={isRevealedByHost || pickedBox || step === DISPLAY_RESULT}
+      style={isRevealedByHost ? { opacity: "0.2" } : { opacity: "1" }}
     >
       {displayValueOfBox ? valueOfBox : isPickedValue}
     </button>

@@ -1,7 +1,7 @@
 import {
   SET_PICKED_BOX,
   RESET_GAME,
-  REVELE_EMPTY_BOX,
+  REVEAL_EMPTY_BOX,
   INIT_BOX_WITH_MONEY,
   SET_STEP,
   SET_SWITCHED_STATISTICS,
@@ -21,9 +21,9 @@ export function resetGame() {
   };
 }
 
-export function reveleEmptyBox() {
+export function revealEmptyBox() {
   return {
-    type: REVELE_EMPTY_BOX,
+    type: REVEAL_EMPTY_BOX,
   };
 }
 

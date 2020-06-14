@@ -1,13 +1,12 @@
 import produce from "immer";
 import * as constants from "./constants";
-import { getRandomInt, getRandomBox } from "./utils/getRandomHelper";
+import { getRandomInt } from "./utils/getRandomHelper";
 import { initialBoxes, initialStatistics } from "./utils/initialHelper";
 
 const initialState = {
   boxes: initialBoxes,
   currentBox: {},
   step: constants.PICK_FIRST_BOX,
-  switchedBox: false,
   switchedStatistics: initialStatistics,
   keptStatistics: initialStatistics,
 };
@@ -16,9 +15,7 @@ const reducer = produce((draft, action) => {
   const { step, type, pickedBox } = action;
 
   function setPercentage(win, count) {
-    const gamesPlayed = count;
-    const gamesWon = win * 100;
-    return (gamesWon / gamesPlayed).toFixed(1);
+    return ((win / count) * 100).toFixed(1);
   }
 
   // eslint-disable-next-line default-case
@@ -69,15 +66,9 @@ const reducer = produce((draft, action) => {
       draft.step = constants.PICK_FIRST_BOX;
       return draft;
 
-    case constants.REVELE_EMPTY_BOX:
-      const boxesWithoutMoney = draft.boxes.filter((box) => !box.money);
-      const reveleadNumber = getRandomBox(boxesWithoutMoney.length);
-
-      let reveleadByHost = boxesWithoutMoney[reveleadNumber];
-      if (reveleadByHost.pickedBox) {
-        reveleadByHost = boxesWithoutMoney[+!reveleadNumber];
-      }
-      draft.boxes[reveleadByHost.id].isReveleadByHost = true;
+    case constants.REVEAL_EMPTY_BOX:
+      let revealedBox = draft.boxes.find((box) => !box.money && !box.pickedBox);
+      draft.boxes[revealedBox.id].isRevealedByHost = true;
       return draft;
 
     case constants.INIT_BOX_WITH_MONEY:

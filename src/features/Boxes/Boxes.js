@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   setPickedBox,
   resetGame,
-  reveleEmptyBox,
+  revealEmptyBox,
   initBoxWithMoney,
   setStep,
   setSwitchedStatistics,
@@ -46,7 +46,7 @@ export default function Boxes() {
 
   const dispatchPickFirstBox = (pickedBox) => {
     dispatch(setPickedBox(pickedBox));
-    dispatch(reveleEmptyBox());
+    dispatch(revealEmptyBox());
     dispatch(setStep(KEEP_OR_SWITCH_BOX));
   };
 
@@ -58,18 +58,10 @@ export default function Boxes() {
 
   function pickBox(descision, times) {
     for (let index = 0; index < times; index++) {
+      dispatchResetGame();
       const randomBox = allBoxes[getRandomInt(0, 3)];
-      setTimeout(() => {
-        dispatchPickFirstBox(randomBox);
-      }, 100);
-
-      setTimeout(() => {
-        descision(randomBox);
-      }, 100);
-
-      setTimeout(() => {
-        dispatchResetGame();
-      }, 100);
+      dispatchPickFirstBox(randomBox);
+      descision(randomBox);
     }
   }
 
@@ -128,8 +120,8 @@ export default function Boxes() {
 
       <Button
         className={"button"}
-        onClick={() => simulateGame(1000)}
-        text={loadingSimulation ? <div class="loader" /> : "Run simulation"}
+        onClick={() => simulateGame(100)}
+        text={loadingSimulation ? <div className="loader" /> : "Run simulation"}
         disabled={loadingSimulation}
       />
     </>
