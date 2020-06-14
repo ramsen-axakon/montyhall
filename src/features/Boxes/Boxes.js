@@ -121,7 +121,7 @@ export default function Boxes() {
         className={"button"}
         onClick={() => simulateGame(100)}
         text={displaySimulationDone ? "Done!" : "Simulate"}
-        disabled={displaySimulationDone}
+        disabled={currentStep === KEEP_OR_SWITCH_BOX || displaySimulationDone}
       />
     </>
   );
