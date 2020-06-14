@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/montyhall/static/css/main.b5906544.chunk.css",
-    "main.js": "/montyhall/static/js/main.e4d9f8cf.chunk.js",
-    "main.js.map": "/montyhall/static/js/main.e4d9f8cf.chunk.js.map",
+    "main.css": "/montyhall/static/css/main.80a49722.chunk.css",
+    "main.js": "/montyhall/static/js/main.39901095.chunk.js",
+    "main.js.map": "/montyhall/static/js/main.39901095.chunk.js.map",
     "runtime-main.js": "/montyhall/static/js/runtime-main.718674c3.js",
     "runtime-main.js.map": "/montyhall/static/js/runtime-main.718674c3.js.map",
     "static/js/2.09ecee44.chunk.js": "/montyhall/static/js/2.09ecee44.chunk.js",
     "static/js/2.09ecee44.chunk.js.map": "/montyhall/static/js/2.09ecee44.chunk.js.map",
     "index.html": "/montyhall/index.html",
-    "precache-manifest.34bdfc8de793cf3b287bcc70ed70a2fa.js": "/montyhall/precache-manifest.34bdfc8de793cf3b287bcc70ed70a2fa.js",
+    "precache-manifest.73b5d146b2b9fddbc1dc16d288e77558.js": "/montyhall/precache-manifest.73b5d146b2b9fddbc1dc16d288e77558.js",
     "service-worker.js": "/montyhall/service-worker.js",
-    "static/css/main.b5906544.chunk.css.map": "/montyhall/static/css/main.b5906544.chunk.css.map",
+    "static/css/main.80a49722.chunk.css.map": "/montyhall/static/css/main.80a49722.chunk.css.map",
     "static/js/2.09ecee44.chunk.js.LICENSE.txt": "/montyhall/static/js/2.09ecee44.chunk.js.LICENSE.txt",
     "static/media/dollar.png": "/montyhall/static/media/dollar.3ea96691.png",
     "static/media/App.css": "/montyhall/static/media/monty_1.61b92ce6.jpg",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.718674c3.js",
     "static/js/2.09ecee44.chunk.js",
-    "static/css/main.b5906544.chunk.css",
-    "static/js/main.e4d9f8cf.chunk.js"
+    "static/css/main.80a49722.chunk.css",
+    "static/js/main.39901095.chunk.js"
   ]
 }
