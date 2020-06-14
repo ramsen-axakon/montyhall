@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1fc1127e4bad1a83b56df759ede0aac0",
+    "revision": "a3cb8808345a0cf02d7034ec03785322",
     "url": "/montyhall/index.html"
   },
   {
-    "revision": "c55887137259ee30b7ee",
+    "revision": "e571917454d5bde1bc4e",
     "url": "/montyhall/static/css/main.b5906544.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/montyhall/static/js/2.09ecee44.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c55887137259ee30b7ee",
-    "url": "/montyhall/static/js/main.c4bdfecc.chunk.js"
+    "revision": "e571917454d5bde1bc4e",
+    "url": "/montyhall/static/js/main.86fca785.chunk.js"
   },
   {
     "revision": "ae3570f76c2fcb42d709",
