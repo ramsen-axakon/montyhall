@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ea15cb2a4f1f69bf54d026cdc5632106",
+    "revision": "1fc1127e4bad1a83b56df759ede0aac0",
     "url": "/montyhall/index.html"
   },
   {
-    "revision": "c0cf1dc421f051640f7b",
-    "url": "/montyhall/static/css/main.8c7bd13a.chunk.css"
+    "revision": "c55887137259ee30b7ee",
+    "url": "/montyhall/static/css/main.b5906544.chunk.css"
   },
   {
-    "revision": "c0e5586a5804837433eb",
-    "url": "/montyhall/static/js/2.475b9e3f.chunk.js"
+    "revision": "244800bf70c78c6cc38d",
+    "url": "/montyhall/static/js/2.09ecee44.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/montyhall/static/js/2.475b9e3f.chunk.js.LICENSE.txt"
+    "url": "/montyhall/static/js/2.09ecee44.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c0cf1dc421f051640f7b",
-    "url": "/montyhall/static/js/main.5638886d.chunk.js"
+    "revision": "c55887137259ee30b7ee",
+    "url": "/montyhall/static/js/main.c4bdfecc.chunk.js"
   },
   {
     "revision": "ae3570f76c2fcb42d709",
     "url": "/montyhall/static/js/runtime-main.718674c3.js"
   },
   {
-    "revision": "19e53928f5ba49bc87ba9aae330cfb2c",
-    "url": "/montyhall/static/media/money.19e53928.png"
+    "revision": "3ea966914660c617c287df7732fc89d3",
+    "url": "/montyhall/static/media/dollar.3ea96691.png"
   },
   {
     "revision": "61b92ce6595ddb5b71bce61d1a4fba76",

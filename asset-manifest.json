@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/montyhall/static/css/main.8c7bd13a.chunk.css",
-    "main.js": "/montyhall/static/js/main.5638886d.chunk.js",
-    "main.js.map": "/montyhall/static/js/main.5638886d.chunk.js.map",
+    "main.css": "/montyhall/static/css/main.b5906544.chunk.css",
+    "main.js": "/montyhall/static/js/main.c4bdfecc.chunk.js",
+    "main.js.map": "/montyhall/static/js/main.c4bdfecc.chunk.js.map",
     "runtime-main.js": "/montyhall/static/js/runtime-main.718674c3.js",
     "runtime-main.js.map": "/montyhall/static/js/runtime-main.718674c3.js.map",
-    "static/js/2.475b9e3f.chunk.js": "/montyhall/static/js/2.475b9e3f.chunk.js",
-    "static/js/2.475b9e3f.chunk.js.map": "/montyhall/static/js/2.475b9e3f.chunk.js.map",
+    "static/js/2.09ecee44.chunk.js": "/montyhall/static/js/2.09ecee44.chunk.js",
+    "static/js/2.09ecee44.chunk.js.map": "/montyhall/static/js/2.09ecee44.chunk.js.map",
     "index.html": "/montyhall/index.html",
-    "precache-manifest.0726c0e6a5ea3031c4565d62eae0103b.js": "/montyhall/precache-manifest.0726c0e6a5ea3031c4565d62eae0103b.js",
+    "precache-manifest.93fe5d73b76ec714640b2dd8290744d9.js": "/montyhall/precache-manifest.93fe5d73b76ec714640b2dd8290744d9.js",
     "service-worker.js": "/montyhall/service-worker.js",
-    "static/css/main.8c7bd13a.chunk.css.map": "/montyhall/static/css/main.8c7bd13a.chunk.css.map",
-    "static/js/2.475b9e3f.chunk.js.LICENSE.txt": "/montyhall/static/js/2.475b9e3f.chunk.js.LICENSE.txt",
-    "static/media/Box.css": "/montyhall/static/media/money.19e53928.png",
+    "static/css/main.b5906544.chunk.css.map": "/montyhall/static/css/main.b5906544.chunk.css.map",
+    "static/js/2.09ecee44.chunk.js.LICENSE.txt": "/montyhall/static/js/2.09ecee44.chunk.js.LICENSE.txt",
+    "static/media/dollar.png": "/montyhall/static/media/dollar.3ea96691.png",
     "static/media/App.css": "/montyhall/static/media/monty_1.61b92ce6.jpg",
     "static/media/monty_2.jpg": "/montyhall/static/media/monty_2.ed8b4911.jpg",
     "static/media/monty_3.jpg": "/montyhall/static/media/monty_3.64641eb2.jpg",
@@ -22,8 +22,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.718674c3.js",
-    "static/js/2.475b9e3f.chunk.js",
-    "static/css/main.8c7bd13a.chunk.css",
-    "static/js/main.5638886d.chunk.js"
+    "static/js/2.09ecee44.chunk.js",
+    "static/css/main.b5906544.chunk.css",
+    "static/js/main.c4bdfecc.chunk.js"
   ]
 }
