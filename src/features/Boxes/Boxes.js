@@ -25,7 +25,7 @@ export default function Boxes() {
   const allBoxes = useSelector(({ app }) => getBoxes(app));
   const currentStep = useSelector(({ app }) => getStep(app));
 
-  const [displaySimulationDone, setDisplaySimulationDone] = useState(false);
+  const [loadingSimulation, setLoadingSimulation] = useState(false);
 
   const dispatch = useDispatch();
   useEffect(() => {
@@ -58,21 +58,28 @@ export default function Boxes() {
   function pickBox(descision, times) {
     for (let index = 0; index < times; index++) {
       const randomBox = allBoxes[getRandomInt(0, 3)];
+      setTimeout(() => {
+        dispatchPickFirstBox(randomBox);
+      }, 100);
 
-      dispatchPickFirstBox(randomBox);
-      descision(randomBox);
-      dispatchResetGame();
+      setTimeout(() => {
+        descision(randomBox);
+      }, 100);
+
+      setTimeout(() => {
+        dispatchResetGame();
+      }, 100);
     }
   }
 
-  const simulateGame = (times) => {
-    setDisplaySimulationDone(true);
-    pickBox(dispatchSwitchBox, times);
+  function simulateGame(times) {
+    setLoadingSimulation(true);
     pickBox(dispatchKeepBox, times);
+    pickBox(dispatchSwitchBox, times);
     setTimeout(() => {
-      setDisplaySimulationDone(false);
-    }, 3000);
-  };
+      setLoadingSimulation(false);
+    }, 100 * times);
+  }
 
   function nextStepHandler(pickedBox) {
     switch (currentStep) {
@@ -107,21 +114,23 @@ export default function Boxes() {
         className="button button-green"
         onClick={dispatchKeepBox}
         text="Click here to keep box!"
-        disabled={currentStep !== KEEP_OR_SWITCH_BOX}
+        disabled={loadingSimulation || currentStep !== KEEP_OR_SWITCH_BOX}
       />
 
       <Button
         className={"button"}
         onClick={dispatchResetGame}
         text={"Restart game"}
-        disabled={currentStep !== DISPLAY_RESULT}
+        disabled={loadingSimulation || currentStep !== DISPLAY_RESULT}
       />
 
       <Button
         className={"button"}
         onClick={() => simulateGame(100)}
-        text={displaySimulationDone ? "Done!" : "Simulate"}
-        disabled={currentStep === KEEP_OR_SWITCH_BOX || displaySimulationDone}
+        text={
+          loadingSimulation ? "Simulating...please wait!" : "Run simulation"
+        }
+        disabled={loadingSimulation}
       />
     </>
   );
