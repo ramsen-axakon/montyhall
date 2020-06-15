@@ -112,6 +112,7 @@ function App() {
               disabled={box.isRevealed || game.state === "FINISHED"}
               isRevealed={box.isRevealed}
               hasMoney={box.hasMoney}
+              isPicked={box.isPicked}
               onClick={() => pickBox(box.id)}
             >
               {box.id + 1}

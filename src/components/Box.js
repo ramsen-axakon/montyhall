@@ -4,6 +4,7 @@ import dollar from "../assets/img/dollar.png";
 export default function Box({
   isRevealed,
   hasMoney,
+  isPicked,
   disabled,
   children,
   onClick,
@@ -17,6 +18,9 @@ export default function Box({
   if (isRevealed) {
     style = { opacity: "0.2" };
   }
+  if (isPicked) {
+    style = { border: "12px solid white" };
+  }
 
   if (isRevealed && hasMoney) {
     style = {
@@ -25,7 +29,7 @@ export default function Box({
       backgroundRepeat: "repeat",
     };
   }
-
+  console.log(isPicked);
   return (
     <button className="box" style={style} onClick={onClick} disabled={disabled}>
       <span>{children}</span>

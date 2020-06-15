@@ -91,6 +91,7 @@ button {
   border: 12px dotted white;
   outline: none;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
 }
 
 .box:hover {
