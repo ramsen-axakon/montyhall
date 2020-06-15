@@ -4,15 +4,8 @@ import Message from "./components/Message";
 import Button from "./components/Button";
 import Box from "./components/Box";
 import Statistics from "./components/Statistics";
-import monty0 from "./assets/img/monty_1.jpg";
-import monty1 from "./assets/img/monty_2.jpg";
-import monty2 from "./assets/img/monty_3.jpg";
-import monty3 from "./assets/img/monty_4.jpeg";
-import monty4 from "./assets/img/monty_5.jpg";
-import monty5 from "./assets/img/monty_6.jpg";
 
 function App() {
-  const montyImages = [monty0, monty1, monty2, monty3, monty4, monty5];
   const [game, setGame] = useState(Game.new());
   const [isSimulating, setIsSimulating] = useState(false);
   const [statistics, setStatistics] = useState({
@@ -102,14 +95,7 @@ function App() {
   };
 
   return (
-    <div
-      className="app"
-      style={{
-        backgroundImage: `url(${
-          montyImages[Math.ceil(Math.random() * (6 - 0) + 0) - 1]
-        })`,
-      }}
-    >
+    <div className="app">
       <div className="container ">
         <Message
           text={
