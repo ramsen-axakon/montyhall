@@ -1,25 +1,27 @@
 import React from "react";
 
-export default function Statistics({ data }) {
-  const keptPercentage = ((data.keptWins / data.playedRounds) * 100).toFixed(1);
-  const switchPercentage = (
-    (data.switchedWins / data.playedRounds) *
-    100
-  ).toFixed(1);
+export default function Statistics({ data, isLoading }) {
+  const { playedRounds, keptWins, switchedWins } = data;
+  const keptPercentage = ((keptWins / playedRounds) * 100).toFixed(1);
+  const switchPercentage = ((switchedWins / playedRounds) * 100).toFixed(1);
 
-  return (
+  const hasStatistics =
+    Number.isInteger(Math.floor(keptPercentage)) &&
+    Number.isInteger(Math.floor(switchPercentage));
+
+  return hasStatistics && !isLoading ? (
     <div className="statistics">
       <div>Keep</div>
 
       <div className="statistics-row">
         <div className="statistics-data">
           <b>Count:</b>
-          {` ${data.playedRounds}`}
+          {` ${playedRounds}`}
         </div>
 
         <div className="statistics-data">
           <b>Odds:</b>
-          {!isNaN(keptPercentage) ? ` ${keptPercentage} %` : " 0 %"}
+          {` ${keptPercentage} %`}
         </div>
       </div>
 
@@ -30,14 +32,14 @@ export default function Statistics({ data }) {
       <div className="statistics-row">
         <div className="statistics-data">
           <b>Count:</b>
-          {` ${data.playedRounds}`}
+          {` ${playedRounds}`}
         </div>
 
         <div className="statistics-data">
           <b>Odds:</b>
-          {!isNaN(switchPercentage) ? ` ${switchPercentage} %` : " 0 %"}
+          {` ${switchPercentage} %`}
         </div>
       </div>
     </div>
-  );
+  ) : null;
 }

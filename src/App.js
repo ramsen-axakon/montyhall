@@ -17,7 +17,7 @@ function App() {
   const pickBox = (id) => setGame(Game.pickBox(game, id));
 
   const resetGame = () => {
-    setStatistics({ ...statistics, playedRounds: statistics.playedRounds + 1 });
+    setStatistics({ ...statistics, playedRounds: 0 });
     setGame(Game.new());
   };
 
@@ -40,7 +40,7 @@ function App() {
     setStatistics({
       switchedWins: switchedResult,
       keptWins: keptResult,
-      playedRounds: iterations,
+      playedRounds: statistics.playedRounds + iterations,
     });
     setTimeout(() => {
       setIsSimulating(false);
@@ -132,7 +132,7 @@ function App() {
           Run simulation
         </Button>
 
-        <Statistics data={statistics} />
+        <Statistics data={statistics} isLoading={isSimulating} />
       </div>
     </div>
   );
