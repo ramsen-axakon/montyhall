@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/montyhall/static/css/main.4fba627f.chunk.css",
-    "main.js": "/montyhall/static/js/main.1482d937.chunk.js",
-    "main.js.map": "/montyhall/static/js/main.1482d937.chunk.js.map",
+    "main.js": "/montyhall/static/js/main.f5a367d1.chunk.js",
+    "main.js.map": "/montyhall/static/js/main.f5a367d1.chunk.js.map",
     "runtime-main.js": "/montyhall/static/js/runtime-main.718674c3.js",
     "runtime-main.js.map": "/montyhall/static/js/runtime-main.718674c3.js.map",
     "static/js/2.aa9e8700.chunk.js": "/montyhall/static/js/2.aa9e8700.chunk.js",
     "static/js/2.aa9e8700.chunk.js.map": "/montyhall/static/js/2.aa9e8700.chunk.js.map",
     "index.html": "/montyhall/index.html",
-    "precache-manifest.65d73093d34c2e72d64e299c6653bc83.js": "/montyhall/precache-manifest.65d73093d34c2e72d64e299c6653bc83.js",
+    "precache-manifest.8bc9c525a857dd13057fd2cfc2b0d64c.js": "/montyhall/precache-manifest.8bc9c525a857dd13057fd2cfc2b0d64c.js",
     "service-worker.js": "/montyhall/service-worker.js",
     "static/css/main.4fba627f.chunk.css.map": "/montyhall/static/css/main.4fba627f.chunk.css.map",
     "static/js/2.aa9e8700.chunk.js.LICENSE.txt": "/montyhall/static/js/2.aa9e8700.chunk.js.LICENSE.txt",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.718674c3.js",
     "static/js/2.aa9e8700.chunk.js",
     "static/css/main.4fba627f.chunk.css",
-    "static/js/main.1482d937.chunk.js"
+    "static/js/main.f5a367d1.chunk.js"
   ]
 }
