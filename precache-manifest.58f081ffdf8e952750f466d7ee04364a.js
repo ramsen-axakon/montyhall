@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8b3bc0ea19b7cfed7fa82610dbadcd36",
+    "revision": "7078523117722cd48f1c8836e64fc958",
     "url": "/montyhall/index.html"
   },
   {
-    "revision": "58491a0b72179a1393f4",
-    "url": "/montyhall/static/css/main.47d6298f.chunk.css"
+    "revision": "cb5362d9e3bbc234db2e",
+    "url": "/montyhall/static/css/main.15f02c05.chunk.css"
   },
   {
-    "revision": "244800bf70c78c6cc38d",
-    "url": "/montyhall/static/js/2.09ecee44.chunk.js"
+    "revision": "92be146296328f18bf17",
+    "url": "/montyhall/static/js/2.89db8da1.chunk.js"
   },
   {
-    "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/montyhall/static/js/2.09ecee44.chunk.js.LICENSE.txt"
+    "revision": "e88a3e95b5364d46e95b35ae8c0dc27d",
+    "url": "/montyhall/static/js/2.89db8da1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "58491a0b72179a1393f4",
-    "url": "/montyhall/static/js/main.39901095.chunk.js"
+    "revision": "cb5362d9e3bbc234db2e",
+    "url": "/montyhall/static/js/main.82310fbc.chunk.js"
   },
   {
     "revision": "ae3570f76c2fcb42d709",
