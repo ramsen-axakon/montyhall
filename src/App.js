@@ -81,7 +81,7 @@ function App() {
         return "Welcome contender! Please, pick a box!";
 
       case "SECOND_PICK":
-        return "Click on the numbered box to switch or the button to keep your box!";
+        return "Switch or keep your box!";
 
       case "FINISHED":
         if (game.hasWon) {
