@@ -29,7 +29,7 @@ export default function Box({
       backgroundRepeat: "repeat",
     };
   }
-  console.log(isPicked);
+
   return (
     <button className="box" style={style} onClick={onClick} disabled={disabled}>
       <span>{children}</span>
