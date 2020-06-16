@@ -40,7 +40,7 @@ function App() {
     setStatistics({
       switchedWins: switchedResult,
       keptWins: keptResult,
-      playedRounds: statistics.playedRounds + iterations,
+      playedRounds: iterations,
     });
     setTimeout(() => {
       setIsSimulating(false);
